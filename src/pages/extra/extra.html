@@ -1,0 +1,33 @@
+<!--
+  Generated template for the ExtraPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>extra</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+  <ion-item>
+    <ion-icon name="star-outline" item-start></ion-icon>
+    Points
+    <ion-badge item-end>{{points}}</ion-badge>
+  </ion-item>
+  <button ion-button color="secondary" full (click)="addOnePoint()">+1</button>
+  <button ion-button color="danger" full (click)="minusOnePoint()">-1</button>
+
+
+  <ion-item>
+    <ion-label floating>Points to add</ion-label>
+    <ion-input type="text" [(ngModel)]="pointsToAdd"></ion-input>
+  </ion-item>
+  <button ion-button full (click)="addPoints()">+</button>
+  <button ion-button color="dark" full (click)="goToExtra2()">extra2</button>
+
+</ion-content>
